@@ -57,5 +57,8 @@ class CreatePoll extends Component
              ]);
             }
             $this->reset(['title', 'options']);*/
+
+            // fire an event 
+            $this->dispatch('pollCreated');
     }   
 }
